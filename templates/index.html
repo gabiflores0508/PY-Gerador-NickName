@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nickname Generator</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="title">
+            <h1>Nickname Generator</h1>
+            <h2>100% autonático</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="escolha">
+            <h3>Escolha o tipo de gerador que deseja usar:</h3>
+            <p class="basic" onclick="selecionarOpcao(this, 'básico')">Gerar nickname BÁSICO</p>
+            <p class="tema" onclick="selecionarOpcao(this, 'tema')">Gerar nickname por TEMA</p>
+            <p class="palavra" onclick="selecionarOpcao(this, 'palavra')">Gerar nickname por PALAVRA ESPECIFICA</p>
+            <p class="personalizado" onclick="selecionarOpcao(this, 'personalizado')">Gerar nickname PERSONALIZADO</p>
+        </div>
+
+        <div class="extra-fields" id="extraFieldsTema" style="display: none;">
+            <label for="tema">Escolha o tema:</label>
+            <select id="tema">
+                <option value="fantasia">Fantasia</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="esportes">Esportes</option>
+            </select>
+        </div>
+
+        <div class="extra-fields" id="extraFieldsPalavra" style="display: none;">
+            <label for="palavra">Digite uma palavra específica:</label>
+            <input type="text" id="palavra" placeholder="Ex: Guerreiro">
+        </div>
+
+        <div class="extra-fields" id="extraFieldsPersonalizado" style="display: none;">
+            <h4>Escolha um tema:</h4>
+            <select id="personalizadoTema">
+                <option value="natureza">Natureza</option>
+                <option value="futurista">Futurista</option>
+                <option value="medieval">Medieval</option>
+            </select>
+
+            <h4>Incluir símbolos?</h4>
+            <select id="personalizadoSimbolos">
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+
+            <h4>Escolha um número:</h4>
+            <input type="number" id="personalizadoNumero" placeholder="Digite um número">
+
+            <h4>Inicial do nickname:</h4>
+            <input type="text" id="personalizadoInicial" placeholder="Ex: A, B, C" maxlength="1">
+        </div>
+
+        <div class="opcao">
+            <p>Opção selecionada: <span id="opcaoSelecionada">Nenhuma</span></p>
+        </div>
+
+        <button class="btn-gerar" onclick="gerarNickname()">
+            Gerar
+        </button>
+
+        <div class="nickname">
+            <input type="text" id="nicknameGerado" placeholder="Nickname Gerado" readonly>
+        </div>
+
+        <div class="copiar">
+            <button class="btn-copiar" onclick="copiarNickname()">Copiar</button>
+        </div>
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

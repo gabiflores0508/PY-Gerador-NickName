@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do header */
+.header {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header .title {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+/* Estilização da área de escolha */
+.escolha {
+    margin: 30px auto;
+    max-width: 500px;
+    text-align: center;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #000000;
+    }
+
+    p {
+        background: #ffffff;
+        border: 1px solid #007BFF;
+        padding: 15px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    p:hover {
+        background: #c0c0c0;
+    }
+}
+
+.selecionado {
+    background: #007BFF;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Área de resultado */
+.opcao {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Área de resultado */
+.opcao {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#opcaoSelecionada {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Estilização do botão */
+.btn-gerar {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 40px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-gerar:hover {
+    background: #218838;
+}
+
+
+#nicknameGerado {
+    font-weight: bolder;
+    color: #007BFF;
+    padding: 15px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    background-color: #f8f9fa; /* Fundo mais suave */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    outline: none; /* Remove a borda ao clicar */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* Efeito de sombra sutil */
+    cursor: not-allowed;
+
+}
+
+/* Adicionando efeito ao clicar no campo gerado */
+#nicknameGerado:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 15px rgba(0, 86, 179, 0.5);
+}
+
+/* Estilização dos campos adicionais */
+.extra-fields {
+    margin: 20px 5px;
+    text-align: center;
+}
+
+.extra-fields h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.extra-fields input,
+.extra-fields select {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: 60%;
+    margin-top: 5px;
+}
+
+
+.copiar {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-copiar {
+    padding: 15px 40px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-copiar:hover {
+    background: #e68900;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .escolha p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .btn-gerar {
+        width: 90%;
+    }
+
+    #nicknameGerado {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}

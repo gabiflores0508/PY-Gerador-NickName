@@ -1,5 +1,5 @@
 import random
-from listas import ADJETIVOS, SUBSTANTIVOS, SIMBOLOS
+from apps.listas import ADJETIVOS, SUBSTANTIVOS, SIMBOLOS
 
 
 def gerar_nickname_aleatorio(adjetivo, substantivo, simbolo="", numero=None):

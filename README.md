@@ -3,6 +3,7 @@
 ## Como executar o projeto:
 
 ### 1. Clone o repositório:  
+- https://github.com/gabiflores0508/PY-Gerador-NickName.git
 
 ### 2. Instale as dependências:
 - pip install -r requirements.txt
